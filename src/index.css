@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #24272b;
+}
+
+.heading {
+  text-align: center;
+  background-color: darkslategray;
+  padding: 1.5rem;
+  font-size: 3rem;
+  letter-spacing: 10%;
+  font-weight: bold;
+  color: #e6e6e6;
+}
+
+.App {
+  display: flex;
+  gap: 5rem;
+  width: 70%;
+  margin: 1rem auto;
+  justify-content: space-between;
+}
+
+.App .friends-name {
+  display: flex;
+  padding: 0rem 1rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 25px;
+}
+
+.form {
+  margin: 0.5rem 0rem;
+  padding: 1.2rem 2.5rem;
+  color: #e6e6e6;
+  border: 2px solid rgb(58, 137, 47);
+}
+
+.input-form label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+  padding: 0.5rem 0rem;
+  letter-spacing: 10%;
+  font-weight: bold;
+}
+
+.input-form input {
+  padding: 0.5rem;
+  letter-spacing: 10%;
+  font-weight: bold;
+  background-color: #51c5c7;
+}
+.input-form select {
+  padding: 0.5rem;
+  letter-spacing: 10%;
+  font-weight: bold;
+  background-color: #51c5c7;
+}
+
+.form h2 {
+  font-size: 2rem;
+  letter-spacing: 10%;
+  font-weight: bold;
+}
+
+#options {
+  margin-bottom: 1rem;
+}
+
+.friend-item {
+  color: #e6e6e6;
+  display: flex;
+
+  padding: 1rem 0rem;
+  gap: 30px;
+}
+
+.addfriendform {
+  padding: 1rem 0rem;
+  color: #e6e6e6;
+  display: flex;
+  padding: 1rem 0rem;
+  gap: 30px;
+}
+
+.addfriendform label {
+  display: block;
+  font-size: 1rem;
+  letter-spacing: 10%;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.addfriendform input {
+  font-size: 1rem;
+
+  letter-spacing: 10%;
+  font-weight: bold;
+  background-color: #51c5c7;
+}
+
+/* CSS */
+.button-89 {
+  --b: 3px; /* border thickness */
+  --s: 0.45em; /* size of the corner */
+  --color: #51c5c7;
+
+  padding: calc(0.5em + var(--s)) calc(0.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background: conic-gradient(
+      from 90deg at var(--b) var(--b),
+      #0000 90deg,
+      var(--color) 0
+    )
+    var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
+    calc(100% - var(--b) - 2 * var(--_p));
+  transition: 0.3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: 0.6em;
+  font-size: 16px;
+
+  border: 0;
+  display: block;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-89:hover,
+.button-89:focus-visible {
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: 0.05em;
+}
+
+.button-89:active {
+  background: var(--color);
+  color: #fff;
+}
